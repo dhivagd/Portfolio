@@ -5,7 +5,7 @@ import { ShieldCheck, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react
 import { useState, useEffect } from "react";
 
 const realCerts = [
-  { title: "CRTA – Certified Red Team Analyst", issuer: "Cybernetics", year: "2024" },
+  { title: "CRTA – Certified Red Team Analyst", issuer: "Cybernetics", year: "2026" },
   { title: "Deloitte Cyber Job Simulation", issuer: "Deloitte", year: "2024" },
   { title: "Tata Cyber Analyst", issuer: "Tata", year: "2023" },
   { title: "IBM Cybersecurity Fundamentals", issuer: "IBM / Coursera", year: "2023" },
