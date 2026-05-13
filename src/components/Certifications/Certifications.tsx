@@ -5,7 +5,7 @@ import { ShieldCheck, BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react
 import { useState, useEffect } from "react";
 
 const realCerts = [
-  { title: "CRTA – Certified Red Team Analyst", issuer: "Cybernetics", year: "2024" },
+  { title: "CRTA – Certified Red Team Analyst", issuer: "Cybernetics", year: "2026" },
   { title: "Deloitte Cyber Job Simulation", issuer: "Deloitte", year: "2024" },
   { title: "Tata Cyber Analyst", issuer: "Tata", year: "2023" },
   { title: "IBM Cybersecurity Fundamentals", issuer: "IBM / Coursera", year: "2023" },
@@ -119,13 +119,12 @@ export const Certifications = () => {
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.45, ease: "easeInOut" }}
-                className={`grid gap-6 ${
-                  cardsVisible === 1
+                className={`grid gap-6 ${cardsVisible === 1
                     ? "grid-cols-1"
                     : cardsVisible === 2
-                    ? "grid-cols-2"
-                    : "grid-cols-3"
-                }`}
+                      ? "grid-cols-2"
+                      : "grid-cols-3"
+                  }`}
               >
                 {currentCards.map((cert, i) => (
                   <motion.div
@@ -187,11 +186,10 @@ export const Certifications = () => {
                 setPage(i);
               }}
               aria-label={`Go to page ${i + 1}`}
-              className={`transition-all duration-300 rounded-full ${
-                i === page
+              className={`transition-all duration-300 rounded-full ${i === page
                   ? "w-8 h-2 bg-secondary shadow-[0_0_10px_rgba(188,19,254,0.8)]"
                   : "w-2 h-2 bg-white/20 hover:bg-secondary/50"
-              }`}
+                }`}
             />
           ))}
         </div>
